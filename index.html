@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>Trivia Streak</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <h1 id="question">Question Goes Here</h1>
+    <h2 id="category">Category</h2>
+    <h2 id="score">00</h2>
+
+    <form>
+        <button type="button" class="answer" id="ans1" value="1" onclick="AnswerSelected(0)">Option 1</button> <br>
+        <button type="button" class="answer" id="ans2" value="2" onclick="AnswerSelected(1)">Option 2</button> <br>
+        <button type="button" class="answer" id="ans3" value="3" onclick="AnswerSelected(2)">Option 3</button> <br>
+        <button type="button" class="answer" id="ans4" value="4" onclick="AnswerSelected(3)">Option 4</button> <br>
+    </form>
+
+    <!h2 id="strikes">XXX</h2>
+</body>
+
+<div id="failMenu" class="overlay">
+    <!-- Overlay content -->
+    <div class="overlay-content">
+        <h1 id="youScored">You Scored: err</h1>
+        <button type="button" class="answer" id="retry" onclick="CloseFailMenu()">Retry</button> <br>
+    </div>
+</div>
+
+</html>
+
+<script src="main.js" type="text/javascript"></script>
